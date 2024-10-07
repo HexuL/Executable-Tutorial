@@ -10,12 +10,21 @@
     },
     "steps": [
       {
-        "title": "install Minikube",
+        "title": "Install Minikube",
         "text": "step1.md"
+      },
+      {
+        "title": "Create Spring Boot Demo Application",
+        "text": "step2.md"
       }
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        { "file": "assets/create_spring_boot_demo.sh", "target": "/root" }
+      ]
     }
   }
 }
