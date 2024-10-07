@@ -1,6 +1,7 @@
 {
   "title": "Skaffold Tutorial",
   "description": "Using Skaffold for Local Kubernetes Development and CI/CD.",
+  "imageid": "ubuntu:20.04",
   "details": {
     "intro": {
       "text": "intro.md"
