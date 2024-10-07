@@ -1,0 +1,18 @@
+{
+  "title": "Skaffold Tutorial",
+  "description": "Using Skaffold for Local Kubernetes Development and CI/CD.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "install Minikube",
+        "text": "step1.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  }
+}
