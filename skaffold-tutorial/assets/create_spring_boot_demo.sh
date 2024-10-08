@@ -17,21 +17,24 @@ cat > pom.xml <<EOL
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>$GROUP_ID</groupId>
-    <artifactId>$ARTIFACT_ID</artifactId>
+    <groupId>com.example</groupId>
+    <artifactId>demo</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>2.7.6</version> <!-- 添加版本号 -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>2.7.6</version> <!-- 添加版本号 -->
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.7.6</version> <!-- 添加版本号 -->
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -40,10 +43,12 @@ cat > pom.xml <<EOL
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.6</version> <!-- 添加版本号 -->
             </plugin>
         </plugins>
     </build>
 </project>
+
 EOL
 
 # 创建源代码目录结构
