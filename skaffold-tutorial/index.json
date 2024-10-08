@@ -23,7 +23,7 @@
     },
     "assets": {
       "host01": [
-        { "file": "assets/create_spring_boot_demo.sh", "target": "root" }
+        { "file": "assets/create_spring_boot_demo.sh", "target": "/tmp" }
       ]
     }
   }
