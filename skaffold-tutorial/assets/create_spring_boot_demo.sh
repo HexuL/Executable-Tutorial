@@ -5,6 +5,12 @@ GROUP_ID="com.example"
 ARTIFACT_ID="demo"
 PACKAGE="com/example/demo"
 
+# 检查是否存在同名项目目录，如果存在则删除
+if [ -d "$ARTIFACT_ID" ]; then
+  echo "目录 $ARTIFACT_ID 已存在，删除旧目录..."
+  rm -rf $ARTIFACT_ID
+fi
+
 # 创建一个新的 Maven 项目
 mvn archetype:generate -DgroupId=$GROUP_ID -DartifactId=$ARTIFACT_ID -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
@@ -35,6 +41,18 @@ cat > pom.xml <<EOL
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>2.7.6</version> <!-- 添加版本号 -->
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
