@@ -1,9 +1,15 @@
-## Step 2: Create Spring Boot Demo Application
+# Environment Setup
 
-In this step, we will use a script to automatically create a Spring Boot demo application.
+## Prerequisites
 
-Run the following script to create the project:
+To begin with, you need to set up the following tools:
 
-```bash
-chmod +x /root/create_spring_boot_demo.sh
-/root/create_spring_boot_demo.sh
+1. **Minikube**: A tool that lets you run Kubernetes locally.
+2. **kubectl**: The command-line tool for interacting with Kubernetes clusters.
+3. **Skaffold**: A command-line tool for continuous development on Kubernetes.
+
+There's a script named `run.sh` in the `setup-env` directory that will handle all installations for you. Running this script will automatically configure Minikube, kubectl, and Skaffold, enabling you to skip this manual setup section.
+
+Remember to change permissions before use:  `chmod +x /root/test/create_spring_boot_demo.sh`
+
+However, if you would like to install each tool manually, follow the steps below:

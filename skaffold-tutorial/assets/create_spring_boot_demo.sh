@@ -1,23 +1,23 @@
 #!/bin/bash
 
-# 项目基本信息
+
 GROUP_ID="com.example"
 ARTIFACT_ID="demo"
 PACKAGE="com/example/demo"
 
-# 检查是否存在同名项目目录，如果存在则删除
+
 if [ -d "$ARTIFACT_ID" ]; then
-  echo "目录 $ARTIFACT_ID 已存在，删除旧目录..."
+  echo " $ARTIFACT_ID is already exist"
   rm -rf $ARTIFACT_ID
 fi
 
-# 创建一个新的 Maven 项目
+
 mvn archetype:generate -DgroupId=$GROUP_ID -DartifactId=$ARTIFACT_ID -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 
-# 进入项目目录
+
 cd $ARTIFACT_ID || exit
 
-# 修改 pom.xml，添加 Spring Boot 依赖和插件
+
 cat > pom.xml <<EOL
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -60,10 +60,10 @@ cat > pom.xml <<EOL
 
 EOL
 
-# 创建源代码目录结构
+
 mkdir -p src/main/java/$PACKAGE
 
-# 创建 Application.java 主类
+
 cat > src/main/java/$PACKAGE/Application.java <<EOL
 package $GROUP_ID.demo;
 
@@ -78,7 +78,7 @@ public class Application {
 }
 EOL
 
-# 创建 HelloController.java 控制器
+
 cat > src/main/java/$PACKAGE/HelloController.java <<EOL
 package $GROUP_ID.demo;
 
@@ -105,9 +105,8 @@ public class HelloController {
 }
 EOL
 
-# 删除测试代码目录
 rm -rf src/test
 
-# 提示用户手动运行项目
-echo "Spring Boot 项目已创建。您可以使用以下命令运行项目："
+
+echo "The Spring Boot project has been created. You can run the project using the following command in the demo directory:"
 echo "mvn spring-boot:run"

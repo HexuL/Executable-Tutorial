@@ -14,18 +14,34 @@
         "text": "step1.md"
       },
       {
-        "title": "Create Spring Boot Demo Application",
+        "title": "Setup-env",
         "text": "step2.md"
+      },
+      {
+        "title": "Install Minikube",
+        "text": "step2.1.md"
+      },
+      {
+        "title": "Install kubectl",
+        "text": "step2.2.md"
+      },
+      {
+        "title": "Install Skaffold",
+        "text": "step2.3.md"
+      },
+      {
+        "title": "Create Spring Boot Demo Application",
+        "text": "step3.md"
       }
     ],
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "host01": [
-        { "file": "create_spring_boot_demo.sh", "target": "test" },
-        { "file": "run.sh", "target": "setup-env" }
-      ]
     }
+  },
+  "assets": {
+    "host01": [
+      { "file": "create_spring_boot_demo.sh", "target": "test" },
+      { "file": "run.sh", "target": "setup-env" }
+    ]
   }
 }
