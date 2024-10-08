@@ -63,6 +63,21 @@ EOL
 # 创建源代码目录结构
 mkdir -p src/main/java/$PACKAGE
 
+# 创建 Application.java 主类
+cat > src/main/java/$PACKAGE/Application.java <<EOL
+package $GROUP_ID.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+    public static void main(String[] args) {
+        SpringApplication.run(Application.class, args);
+    }
+}
+EOL
+
 # 创建 HelloController.java 控制器
 cat > src/main/java/$PACKAGE/HelloController.java <<EOL
 package $GROUP_ID.demo;
