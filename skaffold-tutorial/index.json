@@ -28,6 +28,10 @@
       {
         "title": "Create Spring Boot Demo Application",
         "text": "step3.md"
+      },
+      {
+        "title": "Initialize Skaffold",
+        "text": "step4.md"
       }
     ],
     "finish": {
