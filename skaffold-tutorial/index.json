@@ -10,10 +10,6 @@
     },
     "steps": [
       {
-        "title": "Install Minikube",
-        "text": "step1.md"
-      },
-      {
         "title": "Setup-env",
         "text": "step2.md"
       },
