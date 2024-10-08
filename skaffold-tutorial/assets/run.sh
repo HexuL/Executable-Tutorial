@@ -21,4 +21,4 @@ sudo mv skaffold /usr/local/bin/skaffold
 skaffold version
 
 
-echo "Minikube, kubectl 和 Skaffold 已成功安装并配置完成。"
+echo "Minikube, kubectl and Skaffold install successful."
