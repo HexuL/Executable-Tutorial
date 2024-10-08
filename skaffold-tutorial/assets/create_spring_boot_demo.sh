@@ -105,6 +105,6 @@ public class HelloController {
 }
 EOL
 
-# 编译并运行 Spring Boot 项目
-mvn clean install
-mvn spring-boot:run
+# 提示用户手动运行项目
+echo "Spring Boot 项目已创建。您可以使用以下命令运行项目："
+echo "mvn spring-boot:run"
