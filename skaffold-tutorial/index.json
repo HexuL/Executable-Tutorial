@@ -32,12 +32,18 @@
     ],
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "create_spring_boot_demo.sh",
+          "target": "test"
+        },
+        {
+          "file": "run.sh",
+          "target": "setup-env"
+        }
+      ]
     }
-  },
-  "assets": {
-    "host01": [
-      { "file": "create_spring_boot_demo.sh", "target": "test" },
-      { "file": "run.sh", "target": "setup-env" }
-    ]
   }
 }
