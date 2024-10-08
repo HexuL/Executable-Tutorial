@@ -37,24 +37,6 @@ cat > pom.xml <<EOL
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.7.6</version> <!-- 添加版本号 -->
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <version>2.7.6</version> <!-- 添加版本号 -->
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>junit</groupId>
-                    <artifactId>junit</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.8.2</version>
-            <scope>test</scope>
-        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -122,6 +104,9 @@ public class HelloController {
     }
 }
 EOL
+
+# 删除测试代码目录
+rm -rf src/test
 
 # 提示用户手动运行项目
 echo "Spring Boot 项目已创建。您可以使用以下命令运行项目："
