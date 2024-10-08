@@ -45,6 +45,15 @@ cat > pom.xml <<EOL
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.6</version> <!-- 添加版本号 -->
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>11</source>
+                    <target>11</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
