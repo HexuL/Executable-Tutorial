@@ -32,6 +32,18 @@
       {
         "title": "Initialize Skaffold",
         "text": "step4.md"
+      },
+      {
+        "title": "Initialize Skaffold",
+        "text": "step4.1.md"
+      },
+      {
+        "title": "Initialize Skaffold",
+        "text": "step4.2.md"
+      },
+      {
+        "title": "Use Skaffold for continuous development",
+        "text": "step5.md"
       }
     ],
     "finish": {
