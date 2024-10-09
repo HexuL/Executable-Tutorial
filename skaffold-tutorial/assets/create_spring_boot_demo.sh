@@ -69,14 +69,6 @@ cat > pom.xml <<EOL
                         <image>openjdk:11-jre-slim</image>
                     </from>
 
-                    <!-- Destination image repository -->
-                    <to>
-                        <image>docker.io/${docker.image.prefix}/demo</image>
-                        <tags>
-                            <tag>${project.version}</tag>
-                        </tags>
-                    </to>
-
                     <!-- Main class configuration -->
                     <container>
                         <mainClass>com.example.demo.Application</mainClass>
