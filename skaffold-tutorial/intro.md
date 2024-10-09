@@ -12,7 +12,7 @@
 
 When you using Kubernetes in development. Typically, you would need to build images, push them to a registry, and apply configurations manually every time you make a change. This repetitive process makes the development cycle slow. Skaffold helps automate these tasks, enabling a seamless build and deploy cycle directly from your development environment. It greatly reduces the manual overhead and makes continuous development faster and more efficient, aligning well with DevOps best practices.
 
-![Manual Process vs Skaffold Automation](assets/image.png)
+![Manual Process vs Skaffold Automation](../skaffold-tutorial/assets/image.png)
 
 Let's get started! 🎉
 
