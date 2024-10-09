@@ -2,7 +2,7 @@
 
 **Step 2: Initialize Skaffold**
 
-Run `skaffold init` to generate skaffold.yaml. Skaffold will detect the deployment.yaml file you just created and generate a skaffold.yaml configuration file.
+Run `skaffold init --XXenableJibInit` to generate skaffold.yaml. Skaffold will detect the deployment.yaml file you just created and generate a skaffold.yaml configuration file.
 
 the terminal will prompt you with configuration suggestions. Type y to confirm the setup.
 Once done, you should see a confirmation message like this:

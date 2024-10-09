@@ -1,1 +1,1 @@
-finish test
+Congratualations! You have used skaffold to development continuously.
