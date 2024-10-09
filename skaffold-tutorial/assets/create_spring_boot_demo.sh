@@ -92,9 +92,6 @@ cat > pom.xml <<EOL
 </project>
 EOL
 
-EOL
-
-
 mkdir -p src/main/java/$PACKAGE
 
 
