@@ -58,6 +58,35 @@ cat > pom.xml <<EOL
                     <target>11</target>
                 </configuration>
             </plugin>
+            <!-- Jib Plugin Configuration -->
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>1.8.0</version>
+                <configuration>
+                    <!-- Base image (JDK version) -->
+                    <from>
+                        <image>openjdk:11-jre-slim</image>
+                    </from>
+
+                    <!-- Destination image repository -->
+                    <to>
+                        <image>docker.io/${docker.image.prefix}/demo</image>
+                        <tags>
+                            <tag>${project.version}</tag>
+                        </tags>
+                    </to>
+
+                    <!-- Main class configuration -->
+                    <container>
+                        <mainClass>com.example.demo.Application</mainClass>
+                        <user>nobody</user>
+                        <ports>
+                            <port>8080</port>
+                        </ports>
+                    </container>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
 </project>
