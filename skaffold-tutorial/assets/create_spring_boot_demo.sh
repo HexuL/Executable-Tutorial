@@ -30,12 +30,12 @@ cat > pom.xml <<EOL
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>2.7.6</version> <!-- 添加版本号 -->
+            <version>2.7.6</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>2.7.6</version> <!-- 添加版本号 -->
+            <version>2.7.6</version>
         </dependency>
     </dependencies>
     <build>
@@ -43,7 +43,11 @@ cat > pom.xml <<EOL
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.7.6</version> <!-- 添加版本号 -->
+                <version>2.7.6</version>
+                <configuration>
+                    <!-- Main class to run the application -->
+                    <mainClass>$GROUP_ID.demo.Application</mainClass>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -57,6 +61,7 @@ cat > pom.xml <<EOL
         </plugins>
     </build>
 </project>
+EOL
 
 EOL
 
